@@ -2,9 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.m.nfc_rfid">
 
-    <uses-permission android:name="android.permission.NFC"/>
-    <uses-feature android:name="android.hardware.nfc"
-        android:required="true"/>
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -20,14 +21,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <intent-filter>
-                <action android:name="android.nfc.action.TAG_DISCOVERED"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <data android:mimeType="application/com.example.main_activity "/>
+                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
             </intent-filter>
-            <!--<meta-data android:name="android.nfc.action.TECH_DISCOVERED"
-                android:resource="@xml/nfc_tech_filter" />-->
-            <meta-data android:name="android.nfc.action.NDEF_DISCOVERED"
+
+            <meta-data
+                android:name="android.nfc.action.TECH_DISCOVERED"
                 android:resource="@xml/nfc_tech_filter" />
+            <!--<meta-data android:name="android.nfc.action.NDEF_DISCOVERED"
+                android:resource="@xml/nfc_tech_filter" />-->
         </activity>
     </application>
 

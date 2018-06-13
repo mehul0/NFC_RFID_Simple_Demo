@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     android:orientation="horizontal"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:baselineAligned="false">
 
     <LinearLayout
         android:layout_width="0dp"
@@ -20,7 +21,7 @@
             android:layout_margin="10dp"
             android:layout_gravity="center_horizontal"
             android:autoLink="web"
-            android:text="http://android-er.blogspot.com/"
+            android:text="@string/url_http_android_er_blogspot_com"
             android:textStyle="bold"/>
 
         <TextView

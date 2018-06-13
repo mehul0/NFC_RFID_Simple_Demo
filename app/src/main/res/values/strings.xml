@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">NFC RFID Simple Demo</string>
+    <string name="url_http_android_er_blogspot_com">http://android-er.blogspot.com/</string>
 </resources>
